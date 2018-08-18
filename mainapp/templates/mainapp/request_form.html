@@ -44,7 +44,7 @@
     </div>
   </div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
   <script type="text/javascript">
 	try {
@@ -134,12 +134,12 @@
 		showLocationPickerForm();
 	})
 
-	</script>
+  </script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdPKYd4vwgQY-OmF0Vn22wJu0EcDyi1MQ&libraries=places&callback=initMap"
-			async defer></script>
+        async defer></script>
 
-	{% compress js %}
+  {% compress js %}
   <script src="{% static 'js/placepicker.js' %}"
         async defer></script>
   {% endcompress %}

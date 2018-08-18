@@ -1,6 +1,7 @@
 {% spaceless %}
 {% load static %}
 {% load bootstrap3 %}
+{% load compress %}
 
 <!DOCTYPE html>
 <html>
@@ -26,7 +27,9 @@
 
   {% bootstrap_css %}
 
+  {% compress css %}
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+  {% endcompress %}
 
 </head>
 

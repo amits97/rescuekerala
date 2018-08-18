@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'django_filters',
     'raven.contrib.django.raven_compat',
+    'compressor',
 ]
 
 MIDDLEWARE = [
@@ -189,6 +190,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # STATICFILES_STORAGE = 'floodrelief.storage.WhiteNoiseStaticFilesStorage'
 STATIC_URL = '/static/'
@@ -198,3 +204,8 @@ STATICFILES_DIRS = (
 )
 
 ADMIN_SITE_HEADER = "Keralarescue Dashboard"
+
+COMPRESS_ENABLED = True
+COMPRESS_CSS_FILTERS = [
+    'compressor.filters.css_default.CssAbsoluteFilter',  'compressor.filters.cssmin.CSSMinFilter'
+]

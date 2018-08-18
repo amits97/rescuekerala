@@ -198,3 +198,8 @@ STATICFILES_DIRS = (
 )
 
 ADMIN_SITE_HEADER = "Keralarescue Dashboard"
+
+BOOTSTRAP3 = {
+    # The Bootstrap base URL
+    'base_url': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/',
+}

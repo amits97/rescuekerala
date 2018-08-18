@@ -14,8 +14,27 @@ body{
     text-decoration: none;
     display:inline-block;margin-top:5px;
 }
-.nav-logo{
+.nav-logo-common{
     height: 60px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.nav-logo{
+    width: 81.25px;
+    background-size: 206.4px 60px;
+}
+.nav-logo-ieee{
+    float: right;
+    margin-right: 6px;
+    background-size: 258px 75px;
+    width: 76.7px;
+    background-position: -182px 0;
+}
+.nav-logo-itmission{
+    float: right;
+    width: 55.8px;
+    background-size: 206.4px 60px;
+    background-position: -83px 0;
 }
 .backtohome{
     float:right;

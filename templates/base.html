@@ -19,6 +19,9 @@
 
   <title>Kerala Rescue</title>
 
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="prerender" href="/request/">
+
   {# <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}"/> #}
 
   {% block css %}
@@ -37,7 +40,7 @@
 <nav class="navbar">
     <div class="col-sm-4 col-xs-4">
       <a href="/">
-        <img src="{% static 'images/kerala-government.jpg' %}" class="nav-logo" style="float:left">
+        <div class="nav-logo-common nav-logo" style="background-image:url({% static 'images/sprite.png' %});"></div>
       </a>
     </div>
     <div class="col-sm-4 col-xs-4 text-center">
@@ -47,9 +50,9 @@
     </div>
     <div class="col-sm-4 col-xs-4">
       <a href="http://www.itmission.kerala.gov.in/">
-      <img src="{% static 'images/it-mission.png' %}" class="nav-logo" style="float: right;">
+      <div class="nav-logo-common nav-logo-itmission" style="background-image:url({% static 'images/sprite.png' %});"></div>
       </a>
-      <a href="/ieee/"><img src="{% static 'images/ieeelogo.png' %}" class="nav-logo" style="float: right;margin-right: 6px;"></a>
+      <a href="/ieee/"><div class="nav-logo-common nav-logo-ieee" style="background-image:url({% static 'images/sprite.png' %});"></div></a>
     </div>
 </nav>
 <div class="container">
@@ -72,7 +75,7 @@
   </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 {% bootstrap_javascript %}
 
 {% block javascript %}

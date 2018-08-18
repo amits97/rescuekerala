@@ -140,8 +140,24 @@ footer{
     a.home-button .text{
         font-size: 2rem;
     }
-    .nav-logo{
+    .nav-logo-common{
         height: 30px;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .nav-logo{
+        width: 39px;
+        background-size: 103.2px 30px;
+    }
+    .nav-logo-ieee{
+        background-size: 120.4px 35px;
+        width: 38.34px;
+        background-position: -83px 3px;
+    }
+    .nav-logo-itmission{
+        width: 27.89px;
+        background-size: 103.2px 30px;
+        background-position: -42px 0;
     }
     .footer-logo{
         height: 80px;
